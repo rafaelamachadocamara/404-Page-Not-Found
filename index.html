@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>404 Page Error</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div class="content">
+            <h2>404</h2>
+            <h4>Ops! Página não encontrada</h4>
+            <p>A página que você está procurando não existe. O link que você seguiu pode estar quebrado ou a página pode
+                ter sido removida.</p>
+            <a href="#">Voltar ao menu</a>
+        </div>
+    </div>
+
+    <!--JavaScrip-->
+
+    <script type="text/javascript">
+        var container = document.getElementById('container');
+        window.onmousemove = function (e){
+            var x = - e.clientX/5,
+                y = - e.clientY/5;
+            container.style.backgroundPositionX = x + 'px';
+            container.style.backgroundPositionY = y + 'px';
+        }
+    </script>
+
+</body>
+
+</html>
